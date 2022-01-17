@@ -1,115 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pokedex</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/pokeball.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokedex</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/pokeball.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="container-fluid bg-custom text-light py-5">
     <div class="row">
+      <!--column 1/4 of the large screen -->
       <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-        <div class="row">
-          <div class="col-6">
-            <img class = "pokemon-pic" src="images/pikachu.png" alt="pikachu-pic">
+        <div id="PikachuControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/pikachu.png" alt="pikachu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Pikachu</h1>
+                    <p>Type: Electric</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/raichu.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Raichu</h1>
+                    <p>Type: Electric</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <h2>Pikachu</h1>
-            <p>Type: Electric</p>
+          <button class="carousel-control-next" type="button" data-bs-target="#PikachuControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+        <div id="SquirtleControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/squirtle.png" alt="pikachu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Squirtle</h1>
+                    <p>Type: Water</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/wartortle.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Wartortle</h1>
+                    <p>Type: Water</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/Blastoice.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Blastoice</h1>
+                    <p>Type: Water</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#SquirtleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+        <div id="PidgeotoControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/pidgey.webp" alt="pikachu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Pidgey</h1>
+                    <p>Type: Flying</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/pidgeoto.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Pidgeotto</h1>
+                    <p>Type: Flying</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/pidgeot.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Pidgeot</h1>
+                    <p>Type: Flying</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#PidgeotoControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+        <div id="OnixControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/onix.webp" alt="pikachu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Onix</h1>
+                    <p>Type: Rock</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/Steelix.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Steelix</h1>
+                    <p>Type: Rock</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#OnixControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
         <div class="row">
           <div class="col-6">
-            <img class = "pokemon-pic" src="images/squirtle.png" alt="squirtle-pic">
-          </div>
-          <div class="col-6">
-            <h2>Squirtle</h1>
-            <p>Type: Water</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-        <div class="row">
-          <div class="col-6">
-            <img class = "pokemon-pic" src="images/pidgeoto.webp" alt="pikachu-pic">
-          </div>
-          <div class="col-6">
-            <h2>Pidgeoto</h1>
-            <p>Type: Flying</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-        <div class="row">
-          <div class="col-6">
-            <img class = "pokemon-pic" src="images/onix.webp" alt="pikachu-pic">
-          </div>
-          <div class="col-6">
-            <h2>Onix</h1>
-            <p>Type: Rock</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-        <div class="row">
-          <div class="col-6">
-            <img class = "pokemon-pic" src="images/mewtwo.webp" alt="pikachu-pic">
+            <img class="pokemon-pic" src="images/mewtwo.webp" alt="pikachu-pic">
           </div>
           <div class="col-6">
             <h2>MewTwo</h1>
-            <p>Type: Psychic</p>
+              <p>Type: Psychic</p>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-        <div class="row">
-          <div class="col-6">
-            <img class = "pokemon-pic" src="images/charmander.png" alt="pikachu-pic">
+        <div id="CharmanderControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/charmander.png" alt="pikachu-pic">
+                </div>
+                <div class="col-6">
+                  <h3>Charmander</h3>
+                    <p>Type: Fire</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/charmeleon.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h3>Charmeleon</h3>
+                    <p>Type: Fire</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/charizard.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h3>Charizard</h3>
+                    <p>Type: Fire</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <h2>Charmander</h1>
-            <p>Type: Fire</p>
-          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#CharmanderControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-        <div class="row">
-          <div class="col-6">
-            <img class = "pokemon-pic" src="images/bulbasaur.png" alt="pikachu-pic">
+        <div id="bulbasaurControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/bulbasaur.png" alt="pikachu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Bulbasaur</h1>
+                    <p>Type: Grass</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/Ivysaur.png" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Ivysaur</h1>
+                    <p>Type: Grass</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/venusaur.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Venusaur</h1>
+                    <p>Type: Grass</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <h2>Bulbasaur</h1>
-            <p>Type: Grass</p>
-          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#bulbasaurControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-        <div class="row">
-          <div class="col-6">
-            <img class = "pokemon-pic" src="images/Abra.webp" alt="pikachu-pic">
+        <div id="abraControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/Abra.webp" alt="pikachu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Abra</h1>
+                    <p>Type: Psychic</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/kadabra.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Kadabra</h1>
+                    <p>Type: Psychic</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img class="pokemon-pic" src="images/alakazam.webp" alt="raichu-pic">
+                </div>
+                <div class="col-6">
+                  <h2>Alakazam</h1>
+                    <p>Type: Psychic</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <h2>Abra</h1>
-            <p>Type: Psychic</p>
-          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#abraControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
   </div>
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+
 </html>
